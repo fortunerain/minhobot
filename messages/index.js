@@ -7,6 +7,8 @@ http://docs.botframework.com/builder/node/guides/understanding-natural-language/
 "use strict";
 var builder = require("botbuilder");
 var botbuilder_azure = require("botbuilder-azure");
+//.env 파일에 환경설정함. process.env.NODE_ENV 등등
+require('dotenv').config()
 
 var useEmulator = (process.env.NODE_ENV == 'development');
 
@@ -25,6 +27,8 @@ console.log(process.env['BotOpenIdMetadata']);
 console.log(process.env['LuisAppId']);
 console.log(process.env['LuisAPIKey']);
 console.log(process.env['LuisAPIHostName']);
+
+ 
 
 var bot = new builder.UniversalBot(connector);
 
