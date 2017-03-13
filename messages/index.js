@@ -17,6 +17,15 @@ var connector = useEmulator ? new builder.ChatConnector() : new botbuilder_azure
     openIdMetadata: process.env['BotOpenIdMetadata']
 });
 
+
+console.log(process.env['MicrosoftAppId']);
+console.log(process.env['MicrosoftAppPassword']);
+console.log(process.env['BotStateEndpoint']);
+console.log(process.env['BotOpenIdMetadata']);
+console.log(process.env['LuisAppId']);
+console.log(process.env['LuisAPIKey']);
+console.log(process.env['LuisAPIHostName']);
+
 var bot = new builder.UniversalBot(connector);
 
 // Make sure you add code to validate these fields
