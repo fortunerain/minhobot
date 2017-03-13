@@ -27,13 +27,7 @@ console.log(process.env['BotOpenIdMetadata']);
 console.log(process.env['LuisAppId']);
 console.log(process.env['LuisAPIKey']);
 console.log(process.env['LuisAPIHostName']);
-<<<<<<< HEAD
- 
-=======
 
- 
-
->>>>>>> origin/master
 var bot = new builder.UniversalBot(connector);
 
 // Make sure you add code to validate these fields
